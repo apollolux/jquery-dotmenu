@@ -66,6 +66,7 @@
 			r = r*2;
 		}
 		return this.each(function(){
+			$(this).addClass('ui-widget');
 			$("a",this).
 				hover(function(){$(this).addClass(cfg.hover);},function(){$(this).removeClass(cfg.hover);}).
 				click(function(e){
