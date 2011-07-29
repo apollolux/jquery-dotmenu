@@ -18,14 +18,13 @@
 			'open':'ui-icon-folder-open',
 			'closed':'ui-icon-folder-collapsed'
 		}, opts);
-		var _pi = Math.PI;
-		function _dtr(x) { return ( x/(360/(2*_pi)) ); }
-		function _rtd(x) { return ( x*(360/(2*_pi)) ); }
-		var _cos = Math.cos, _sin = Math.sin, _rd = Math.round;
+		var _pi = Math.PI, _cos = Math.cos, _sin = Math.sin, _rd = Math.round;
+		function _dtr(x){return x*_pi/180;}
+		function _rtd(x){return x*180/_pi;}
 		function _dot(sel,is_h) {
 			var s = $(sel), sp = cfg.speed, ea = cfg.easing;
 			if (is_h) {
-				s.toggle(true).children("li").css("opacity",0).each(function(){
+				s.toggle(true).children("li").css({"opacity":0}).each(function(){
 					$(this).animate({
 						"left":is_h?$(this).data('x')+'px':0+'px',
 						"top":is_h?$(this).data('y')+'px':0+'px',
