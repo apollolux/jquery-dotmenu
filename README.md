@@ -6,6 +6,7 @@ The original non-jQuery Dot Menu can be found at http://web.archive.org/web/2009
 
 # Installation
 
+0. Get the latest jQuery (and optionally, jQuery-UI); this was developed using 1.6.2, but there may possibly be ways to make it work in an earlier version. If you feel like making that happen, fork it and send me a request!
 1. Get the JS file and the default CSS file that goes with it. Put them in a location that's accessible by your intended webpage.
 2. Reference the files in your page.
 3. Follow the usage instructions below!
