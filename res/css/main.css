@@ -1,0 +1,28 @@
+body	{
+	margin-top:1.0em;
+	background-color:#1a48c0;
+	font-family:Helvetica, Arial, FreeSans, sans-serif;
+	color:#ffffff;
+}
+#container	{
+	margin:0 auto;
+	width:700px;
+}
+a img	{border:0;}
+h1	{font-size:3.8em; color:#e5b73f; margin-bottom:3px;}
+h1 .small	{font-size:0.4em;}
+h1 a	{text-decoration:none;}
+h2	{font-size:1.5em; color:#e5b73f;}
+h3	{text-align:center; color:#e5b73f;}
+a	{color:#e5b73f;}
+pre	{background:#000; color:#fff; padding:15px;}
+pre .code-prompt	{color:lime;}
+hr	{border:0;	width:80%; border-bottom:1px solid #aaa;}
+
+.description	{font-size:1.2em; margin-bottom:30px; margin-top:30px; font-style:italic;}
+.download	{float:right;}
+
+.footer	{text-align:center; padding-top:30px; font-style:italic;}
+
+.dot-demo-area	{position:relative; border:1px solid #aaa; background:#fff;}
+.dot-demo-area ul	{list-style:none;}

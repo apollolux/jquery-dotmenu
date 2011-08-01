@@ -1,83 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>apollolux/jquery-dotmenu @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #1a48c0;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #e5b73f; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #e5b73f; }
-    h3 { text-align: center; color: #e5b73f; }
-    a { color: #e5b73f; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+<meta charset='utf-8'>
+<title>apollolux/jquery-dotmenu @ GitHub</title>
+<link type="text/css" rel="stylesheet" href="res/css/main.css" />
+<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+<link type="text/css" rel="stylesheet" href="res/css/lux/jquery-ui.css" />
+<link type="text/css" rel="stylesheet" href="https://raw.github.com/apollolux/jquery-dotmenu/master/css/jqDot.css" />
+<script type="text/javascript" language="javascript" src="https://raw.github.com/apollolux/jquery-dotmenu/master/js/jquery.dotMenu.min.js"></script>
 </head>
-
 <body>
-  <a href="http://github.com/apollolux/jquery-dotmenu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+<a href="http://github.com/apollolux/jquery-dotmenu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <div id="container">
+<div id="container">
 
-    <div class="download">
-      <a href="http://github.com/apollolux/jquery-dotmenu/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/apollolux/jquery-dotmenu/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+<header>
+	<div class="download">
+		<a href="http://github.com/apollolux/jquery-dotmenu/zipball/master"><img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+		<a href="http://github.com/apollolux/jquery-dotmenu/tarball/master"><img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+	</div>
+	<h1><a href="http://github.com/apollolux/jquery-dotmenu">jquery-dotmenu</a> <span class="small">by <a href="http://github.com/apollolux">apollolux</a></span></h1>
+</header>
 
-    <h1><a href="http://github.com/apollolux/jquery-dotmenu">jquery-dotmenu</a>
-      <span class="small">by <a href="http://github.com/apollolux">apollolux</a></span></h1>
+	<div class="description">
+		<p>A stylized menu transformation based off the old DHTML Central Dot Menu</p>
+	</div>
+	<p>Lorem ipsum project textum...</p>
 
-    <div class="description">
-      A stylized menu transformation based off the old DHTML Central Dot Menu
-    </div>
+<section>
+	<h2>Dependencies</h2>
+	<dl>
+		<dt>jQuery</dt>
+			<dd>1.6.2 or higher, not tested on lower</dd>
+			<dd><a href="http://www.jquery.com">www.jquery.com</a></dd>
+		<dt>jQuery-UI (highly recommended)</dt>
+			<dd>1.8 or higher, not tested on lower</dd>
+			<dd><a href="http://www.jqueryui.com">www.jqueryui.com</a></dd>
+	</dl>
+</section>
 
-    <p>Lorem ipsum project textum...</p><h2>Dependencies</h2>
-<p>Lorem ipsum dependencium...</p>
-<h2>Install</h2>
-<p>Lorem ipsum installationem...</p>
-<h2>License</h2>
-<p>Lorem ipsum license...</p>
-<h2>Authors</h2>
-<p>Alex Rosario (neoexmachina@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Alex Rosario (neoexmachina@gmail.com)<br/>      </p>
+<section>
+	<h2>Install</h2>
+	<ol>
+		<li>Get the latest jQuery (and optionally, jQuery-UI); this was developed using 1.6.2, but there may possibly be ways to make it work in an earlier version. If you feel like making that happen, fork it and send me a request!</li>
+		<li>Get the JS file and the default CSS file that goes with it. Put them in a location that's accessible by your intended webpage.</li>
+		<li>Reference the files in your page.</li>
+		<li>Follow the usage instructions below!</li>
+	</ol>
+</section>
 
+<section id="dot-demo">
+	<h2>Demonstration</h2>
+	<div class="dot-demo-area">
+		<ul class="jqdm">
+			<li>
+				<a href="#">site map</a>
+				<ul>
+					<li><a href="/news">news</a></li>
+					<li>
+						<a href="#">scripts</a>
+						<ul>
+							<li><a href="/script/script22.asp">FoldOutMenu</a></li>
+							<li><a href="/script/script17.asp">Loading Bar</a></li>
+							<li><a href="/script/script16.asp">Window Script</a></li>
+							<li><a href="/script/script15.asp">PageSlideFade</a></li>
+							<li><a href="/script/script14.asp">Circle Menu</a></li>
+							<li><a href="/script/script9.asp">Animation Intro</a></li>
+							<li><a href="/script/script10.asp">NewsSlideFade</a></li>
+							<li><a href="/script/">Other Scripts</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">tutorials</a>
+						<ul>
+							<li><a href="/tutorials/tutorial5.asp">Scripting for vs5 browsers</a></li>
+							<li><a href="/tutorials/tutorial6.asp">Making a Dhtml Script</a></li>
+							<li><a href="/tutorials/tutorial4.asp">Filters &amp; Transitions</a></li>
+							<li><a href="/tutorials/tutorial3.asp">Dhtml Library</a></li>
+							<li><a href="/tutorials/tutorial2.asp">Document Size</a></li>
+							<li><a href="/tutorials/tutorial1.asp">Dhtml Intro</a></li>
+						</ul>
+					</li>
+					<li><a href="#">forums</a></li>
+					<li>
+						<a href="#">resources</a>
+						<ul>
+							<li>
+								<a href="#" rel="15">Cool Sites</a>
+								<ul>
+									<li><a href="/resources/default.asp?catid=5&amp;cattitle=Commercial+sites">Commercial Sites</a></li>
+									<li><a href="/resources/default.asp?catid=6&amp;cattitle=Personal+sites">Personal Sites</a></li>
+									<li><a href="/resources/default.asp?catid=4&amp;cattitle=Experimental+projects">Experimental Projects</a></li>
+								</ul>
+							</li>
+							<li><a href="/resources/default.asp?catid=7&amp;cattitle=Portals">Portals</a></li>
+							<li><a href="/resources/default.asp?catid=1&amp;cattitle=Script+sites">Script Sites</a></li>
+							<li>
+								<a href="#">Tutorials &amp;<br>References</a>
+								<ul>
+									<li><a href="/resources/default.asp?catid=8&amp;cattitle=References">References</a></li>
+									<li><a href="/resources/default.asp?catid=9&amp;cattitle=Tutorials+and+Articles">Tutorials &amp; Articles</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</section>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/apollolux/jquery-dotmenu/zipball/master">zip</a> or
-      <a href="http://github.com/apollolux/jquery-dotmenu/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/apollolux/jquery-dotmenu</pre>
-    </p>
+<section>
+	<h2>License</h2>
+	<p>Lorem ipsum license...</p>
+</section>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/apollolux/jquery-dotmenu">apollolux/jquery-dotmenu</a>
-    </div>
+<section>
+	<h2>Authors</h2>
+	<p>Alex Rosario (apollolux@gmail.com)</p>
+</section>
 
-  </div>
+<section>
+	<h2>Contact</h2>
+	<p>Alex Rosario (apollolux@gmail.com)</p>
+</section>
 
-  
+<section>
+	<h2>Download</h2>
+	<p>
+		You can download this project in either
+		<a href="http://github.com/apollolux/jquery-dotmenu/zipball/master">zip</a> or
+		<a href="http://github.com/apollolux/jquery-dotmenu/tarball/master">tar</a> formats.
+	</p>
+	<p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:</p>
+	<pre><span class="code-prompt">$</span> git clone git://github.com/apollolux/jquery-dotmenu</pre>
+</section>
+
+<footer class="footer">
+<p>get the source code on GitHub : <a href="http://github.com/apollolux/jquery-dotmenu">apollolux/jquery-dotmenu</a></p>
+</footer>
+</div>
+
+<script type="text/javascript" language="javascript">/*<![CDATA[*/
+$(function(){
+	$(".jqdm").dotMenu({
+		'click':function(s,e){
+			e.preventDefault();
+			alert("This link ("+$(s).attr('href')+") has been disabled during testing.");
+		}
+	});
+});
+/*]]>*/</script>
+
 </body>
 </html>
