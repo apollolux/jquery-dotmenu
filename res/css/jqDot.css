@@ -1,0 +1,7 @@
+.jqdm	{position:relative; padding:0; width:400px; height:400px; margin:auto auto; text-align:center;}
+.jqdm, .jqdm ul	{list-style:none;}
+.jqdm ul	{position:absolute; padding:0; top:0; left:0; width:100%;}
+.jqdm li	{position:absolute; z-index:1;}
+.jqdm li a	{display:block; width:100%; text-decoration:none; position:relative;}
+.jqdm a .jqdm-cap	{display:block; position:absolute; z-index:1; white-space:nowrap;}
+.jqdm a .ui-icon	{display:inline-block; margin:0 auto;}
